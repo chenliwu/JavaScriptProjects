@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set操作</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+    const dataSet = new Set();
+
+    window.onload = function () {
+        dataSet.add("value1");
+        dataSet.add("value2");
+        dataSet.add("value3");
+        console.log(dataSet);
+
+        console.log('');
+        console.log('dataSet.forEach');
+        dataSet.forEach((value, key, set) => {
+            console.log("value", value);
+            console.log("set", set);
+        });
+
+    }
+
+</script>
+
+</html>

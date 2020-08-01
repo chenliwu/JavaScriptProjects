@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map操作</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+    const dataMap = new Map();
+
+    window.onload = function () {
+        dataMap.set("key1", "value1");
+        dataMap.set("key2", "value2");
+        dataMap.set("key3", "value3");
+        console.log(dataMap);
+
+        console.log('');
+        console.log('dataMap.forEach');
+        dataMap.forEach((value, key, map) => {
+            console.log("key", key);
+            console.log("value", value);
+        });
+
+    }
+
+</script>
+
+</html>
