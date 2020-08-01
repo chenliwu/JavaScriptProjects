@@ -1,2 +1,5 @@
-target/*.iml.idea/
+
+target/
+*.iml
+.idea/
 .idea
